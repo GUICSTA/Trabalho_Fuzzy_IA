@@ -33,6 +33,6 @@ public class GrupoVariaveis {
                 return var;
             }
         }
-        return null; // Retorna null caso não encontre o nome especificado
+        return null;
     }
 }
