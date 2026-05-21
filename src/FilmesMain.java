@@ -59,6 +59,7 @@ public class FilmesMain {
         armazenaNotas.addVariavel(notaMedia);
         armazenaNotas.addVariavel(notaBoa);
         armazenaNotas.addVariavel(notaExcelente);
+        //gdgf
 
         // 2. Popularidade do Filme
         VariavelFuzzy popularidadeBaixa = new VariavelFuzzy("Baixa", 0, 0, 20, 40);
