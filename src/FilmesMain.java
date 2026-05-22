@@ -35,13 +35,13 @@ public class FilmesMain {
                 return compareScore;
             }
 
-            // Regra 2 (Desempate): Se o Score for igual, ganha o que tem Maior Nota Real
+            // Regra 2 (Desempate):tem Maior Nota Real
             int compareNota = Float.compare(outro.nota, this.nota);
             if (compareNota != 0) {
                 return compareNota;
             }
 
-            // Regra 3 : Se a Nota for igual, ganha o mais Popular
+            // Regra 3 :Nota igual, ganha o mais Popular
             return Float.compare(outro.popularidade, this.popularidade);
         }
     }
@@ -59,7 +59,6 @@ public class FilmesMain {
         armazenaNotas.addVariavel(notaMedia);
         armazenaNotas.addVariavel(notaBoa);
         armazenaNotas.addVariavel(notaExcelente);
-        //gdgf
 
         // 2. Popularidade do Filme
         VariavelFuzzy popularidadeBaixa = new VariavelFuzzy("Baixa", 0, 0, 20, 40);
@@ -142,7 +141,7 @@ public class FilmesMain {
                     valores.put("A", 0f);  // Assistir
                     valores.put("MA", 0f); // Muito Assistir
 
-                    // --- REGRAS DE INFERÊNCIA ---
+                    //
                     rodaRegraE(valores, "Excelente", "Alta", "MA");
                     rodaRegraE(valores, "Excelente", "Pop_Media", "MA");
                     rodaRegraE(valores, "Boa", "Alta", "MA");
