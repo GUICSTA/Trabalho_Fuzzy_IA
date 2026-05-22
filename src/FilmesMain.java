@@ -177,7 +177,7 @@ public class FilmesMain {
                             avaliacaoScore = "Ruim";
                         }
                     }
-
+//
                     // Defuzzificação
                     float pesoNA = 2.0f;
                     float pesoA = 6.0f;
